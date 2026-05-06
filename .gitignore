@@ -1,0 +1,45 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Model checkpoints (large binary)
+models/checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Raw data (too many files)
+data/raw/
+
+# Interim & processed data (generated, heavy)
+data/interim/
+data/processed/
+
+# Vector index (generated from data)
+data/vector_index/
+
+# Knowledge base JSONs (generated)
+data/knowledge_base_raw.json
+data/processed_chunks.json
+
+# Eval sheet (optional, keep if want)
+data/eval_sheet.csv
+
+# Virtual env
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

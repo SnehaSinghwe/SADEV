@@ -1,0 +1,20 @@
+# SADEV local prototype requirements
+# Install: pip install -r requirements.txt --break-system-packages
+
+# ── Core (no extra deps needed for basic pipeline) ────────────────────────
+# The Ollama client uses stdlib urllib — no httpx or requests needed.
+
+# ── RAG ───────────────────────────────────────────────────────────────────
+faiss-cpu==1.8.0
+sentence-transformers==2.7.0
+numpy==1.26.4
+
+# ── Dataset builder (optional — only needed for --generate) ───────────────
+# Uses urllib to call Anthropic API, no SDK needed.
+
+# ── Testing ───────────────────────────────────────────────────────────────
+pytest==8.2.0
+pytest-asyncio==0.23.6
+
+# ── Upgrade path (swap in when ready for API-based model) ────────────────
+# anthropic==0.28.0
